@@ -4,7 +4,7 @@ import React from 'react';
 const Contact = () => {
     return (
         <div className='home'>
-            <h1>CoONTACT PAGE</h1>
+            <h1>CONTACT PAGE</h1>
         </div>
     )
 }

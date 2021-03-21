@@ -1,0 +1,34 @@
+.home {
+  padding: 15px 25px 0;
+
+  h1 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+    margin-top: 25px;
+
+    .grid-item {
+      border: 2px solid #4747ef;
+      height: 250px;
+      font-size: 12px;
+      padding: 40px;
+
+      p {
+        font-size: 2.5em;
+      }
+    }
+  }
+
+  .active-content {
+      display: block;
+  }
+
+  .inactive-content {
+      display: none; 
+  }
+}

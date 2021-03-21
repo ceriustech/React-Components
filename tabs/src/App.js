@@ -1,6 +1,5 @@
 import React from "react";
 
-import Header from "./components/Header/Header";
 import Routes from "./Routes/Routes";
 
 import "./App.css";
@@ -8,7 +7,6 @@ import "./App.css";
 const App = () => {
   return (
     <div className="App">
-      <Header />
       <Routes />
     </div>
   );
