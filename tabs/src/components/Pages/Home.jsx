@@ -6,6 +6,7 @@ import Settings from '../Settings/Settings';
 import { Link } from "react-router-dom";
 
 import SettingsIcon from '@material-ui/icons/Settings';
+import CheckIcon from '@material-ui/icons/Check';
 
 import '../Styles/Home.scss';
 
@@ -21,7 +22,9 @@ const Home = () => {
     return (
         <>
         <Header>
-            <div className="header-right">
+            <CheckIcon className={toggleState === true ? 'settings-icon active-content' : 'settings-header inactive-content'} />
+            <p className={toggleState === true ? 'settings-header active-content' : 'settings-header inactive-content'}>Settings</p>
+            <div className="header-right">     
                 <Link to='/'>Home</Link>
                 <Link to='contact'>Contact</Link>
                 <Link to='/about'>About</Link>

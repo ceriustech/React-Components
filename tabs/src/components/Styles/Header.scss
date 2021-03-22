@@ -22,4 +22,16 @@
       text-decoration: none;
     }
   }
+
+  .settings-header {
+    font-size: 25px;
+  }
+
+  .active-content {
+    display: block;
+  }
+
+  .inactive-content {
+    display: none;
+  }
 }
