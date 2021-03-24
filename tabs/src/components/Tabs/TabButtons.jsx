@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import '../Styles/Tabs.scss'; 
 
-const Tabs = () => {
+const TabButtons = () => {
     const [toggleState, setToggleState] = useState(1);
 
     const toggleTab = (index) => {
@@ -37,7 +37,6 @@ const Tabs = () => {
             className={toggleState === 1 ? "content  active-content" : "content"}
           >
             <h2>Content 1</h2>
-            <hr />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
               praesentium incidunt quia aspernatur quasi quidem facilis quo nihil
@@ -49,7 +48,6 @@ const Tabs = () => {
             className={toggleState === 2 ? "content  active-content" : "content"}
           >
             <h2>Content 2</h2>
-            <hr />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
               voluptatum qui adipisci.
@@ -60,7 +58,6 @@ const Tabs = () => {
             className={toggleState === 3 ? "content  active-content" : "content"}
           >
             <h2>Content 3</h2>
-            <hr />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sed
               nostrum rerum laudantium totam unde adipisci incidunt modi alias!
@@ -75,4 +72,4 @@ const Tabs = () => {
     );
 }
 
-export default Tabs; 
+export default TabButtons; 

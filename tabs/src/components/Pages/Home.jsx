@@ -26,7 +26,7 @@ const Home = () => {
             <p className={toggleState === true ? 'settings-header active-content' : 'settings-header inactive-content'}>Settings</p>
             <div className="header-right">     
                 <Link to='/'>Home</Link>
-                <Link to='contact'>Contact</Link>
+                <Link to='/tabs'>Tabs</Link>
                 <Link to='/about'>About</Link>
                 <SettingsIcon onClick={() => toggleContent()}/>
             </div>

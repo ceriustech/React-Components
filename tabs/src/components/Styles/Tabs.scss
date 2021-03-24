@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 500px;
-  height: 300px;
+  width: 100%;
+  height: 500px;
   background: #f1f1f1;
   margin: 100px auto 0;
   word-break: break-all;
@@ -24,6 +24,7 @@
   box-sizing: content-box;
   position: relative;
   outline: none;
+  font-size: 1.25em;
 }
 .tabs:not(:last-child) {
   border-right: 1px solid rgba(0, 0, 0, 0.274);
@@ -43,7 +44,7 @@
   transform: translateX(-50%);
   width: calc(100% + 2px);
   height: 5px;
-  background: rgb(88, 147, 241);
+  background: rgb(88, 103, 241);
 }
 
 button {
@@ -60,6 +61,7 @@ button {
   display: none;
 }
 .content h2 {
+  font-size: 1.25em;
   padding: 0px 0 5px 0px;
 }
 .content hr {
