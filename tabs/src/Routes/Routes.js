@@ -1,17 +1,17 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 
-import Home from "../components/Pages/Home";
-import Tabs from "../components/Pages/Tabs";
-import About from "../components/Pages/About";
+import HomePage from "../components/Pages/HomePage";
+import TabPage from "../components/Pages/TabPage";
+import AboutPage from "../components/Pages/AboutPage";
 
 const Routes = () => {
   return (
     <>
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/tabs" component={Tabs} />
-        <Route path="/about" component={About} />
+        <Route exact path="/" component={HomePage} />
+        <Route path="/tabs" component={TabPage} />
+        <Route path="/about" component={AboutPage} />
       </Switch>
     </>
   );

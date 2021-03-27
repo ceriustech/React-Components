@@ -1,6 +1,7 @@
 import React, { useState } from 'react'; 
 
-import '../Styles/Tabs.scss'; 
+import '../Styles/TabButtons.scss'; 
+
 
 const TabButtons = () => {
     const [toggleState, setToggleState] = useState(1);

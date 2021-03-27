@@ -11,7 +11,7 @@ import CheckIcon from '@material-ui/icons/Check';
 import '../Styles/Home.scss';
 
 
-const Home = () => {
+const HomePage = () => {
     const [toggleState, setToggleState] = useState(false);
 
     const toggleContent = () => {
@@ -44,4 +44,4 @@ const Home = () => {
     )
 }
 
-export default Home; 
+export default HomePage; 
