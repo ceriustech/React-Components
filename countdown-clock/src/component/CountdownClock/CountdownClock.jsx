@@ -5,7 +5,7 @@ import '../../Styles/CountdownClock/CountdownClock.scss';
 const CountdownClock = () => {
 	const calculateTimeLeft = () => {
 		let year = new Date().getFullYear();
-		let difference = +new Date(`05/18/${year}`) - +new Date();
+		const difference = +new Date(`${year}-05-31`) - +new Date();
 		let timeLeft = {};
 
 		if (difference > 0) {
@@ -21,10 +21,31 @@ const CountdownClock = () => {
 	};
 
 	const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+	const [year, setYear] = useState(new Date().getFullYear());
+
+	useEffect(() => {
+		setTimeout(() => {
+			setTimeLeft(calculateTimeLeft());
+		}, 1000);
+	});
+
+	const timerComponents = [];
+
+	Object.keys(timeLeft).forEach((interval) => {
+		if (!timeLeft[interval]) {
+			return;
+		}
+
+		timerComponents.push(
+			<span>
+				{timeLeft[interval]} {interval}{' '}
+			</span>
+		);
+	});
 
 	return (
 		<div className="countdown-clock-container">
-			<p>Hello world</p>
+			{timerComponents.length ? timerComponents : <span>Time's up!</span>}
 		</div>
 	);
 };
