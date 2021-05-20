@@ -4,16 +4,22 @@ import '../../Styles/CountdownClock/CountdownClock.scss';
 
 const CountdownClock = () => {
 	const calculateTimeLeft = () => {
-		let year = new Date().getFullYear();
-		const difference = +new Date(`${year}-05-31`) - +new Date();
+		const launchDate = new Date(
+			'June 15 2021 23:59:59 GMT-0500 (CST)'
+		).getTime();
+
+		const now = new Date().getTime();
+
+		const distance = launchDate - now;
+
 		let timeLeft = {};
 
-		if (difference > 0) {
+		if (distance > 0) {
 			timeLeft = {
-				days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-				hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-				minutes: Math.floor((difference / 1000 / 60) % 60),
-				seconds: Math.floor((difference / 1000) % 60),
+				days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+				hours: Math.floor((distance / (1000 * 60 * 60)) % 24),
+				minutes: Math.floor((distance / 1000 / 60) % 60),
+				seconds: Math.floor((distance / 1000) % 60),
 			};
 		}
 
@@ -36,11 +42,7 @@ const CountdownClock = () => {
 			return;
 		}
 
-		timerComponents.push(
-			<span>
-				{timeLeft[interval]} {interval}{' '}
-			</span>
-		);
+		timerComponents.push(<span>{timeLeft[interval]} </span>);
 	});
 
 	return (
