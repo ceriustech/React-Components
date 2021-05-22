@@ -38,30 +38,36 @@ const CountdownClock = () => {
 
 	return (
 		<div className="countdown-clock-container">
-			{/* {timerComponents.length ? timerComponents : <span>Time's up!</span>} */}
 			{calculateTimeLeft !== 0 ? (
 				<div className="countdown-clock">
 					<div className="countdown-clock-placement">
 						<p id="timer-days" class="countdown-lock-number">
 							{timeLeft.days}
+							<span>:</span>
 						</p>
 						<p class="countdown-clock-label">Day</p>
 					</div>
 					<div className="countdown-clock-placement">
 						<p id="timer-hours" class="countdown-lock-number">
-							{timeLeft.hours}
+							{timeLeft.hours < 10 ? '0' + timeLeft.hours : timeLeft.hours}
+							<span>:</span>
 						</p>
 						<p class="countdown-clock-label">HR</p>
 					</div>
 					<div className="countdown-clock-placement">
 						<p id="timer-hours" class="countdown-lock-number">
-							{timeLeft.minutes}
+							{timeLeft.minutes < 10
+								? '0' + timeLeft.minutes
+								: timeLeft.minutes}
+							<span>:</span>
 						</p>
 						<p class="countdown-clock-label">MIN</p>
 					</div>
 					<div className="countdown-clock-placement">
 						<p id="timer-hours" class="countdown-lock-number">
-							{timeLeft.seconds}
+							{timeLeft.seconds < 10
+								? '0' + timeLeft.seconds
+								: timeLeft.seconds}
 						</p>
 						<p class="countdown-clock-label">SEC</p>
 					</div>
