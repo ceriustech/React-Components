@@ -26,8 +26,9 @@ const CountdownClock = () => {
 		return timeLeft;
 	};
 
+	console.log(calculateTimeLeft());
+
 	const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-	const [year, setYear] = useState(new Date().getFullYear());
 
 	useEffect(() => {
 		setTimeout(() => {
@@ -35,19 +36,39 @@ const CountdownClock = () => {
 		}, 1000);
 	});
 
-	const timerComponents = [];
-
-	Object.keys(timeLeft).forEach((interval) => {
-		if (!timeLeft[interval]) {
-			return;
-		}
-
-		timerComponents.push(<span>{timeLeft[interval]} </span>);
-	});
-
 	return (
 		<div className="countdown-clock-container">
-			{timerComponents.length ? timerComponents : <span>Time's up!</span>}
+			{/* {timerComponents.length ? timerComponents : <span>Time's up!</span>} */}
+			{calculateTimeLeft !== 0 ? (
+				<div className="countdown-clock">
+					<div className="countdown-clock-placement">
+						<p id="timer-days" class="countdown-lock-number">
+							{timeLeft.days}
+						</p>
+						<p class="countdown-clock-label">Day</p>
+					</div>
+					<div className="countdown-clock-placement">
+						<p id="timer-hours" class="countdown-lock-number">
+							{timeLeft.hours}
+						</p>
+						<p class="countdown-clock-label">HR</p>
+					</div>
+					<div className="countdown-clock-placement">
+						<p id="timer-hours" class="countdown-lock-number">
+							{timeLeft.minutes}
+						</p>
+						<p class="countdown-clock-label">MIN</p>
+					</div>
+					<div className="countdown-clock-placement">
+						<p id="timer-hours" class="countdown-lock-number">
+							{timeLeft.seconds}
+						</p>
+						<p class="countdown-clock-label">SEC</p>
+					</div>
+				</div>
+			) : (
+				<p>Launched</p>
+			)}
 		</div>
 	);
 };
