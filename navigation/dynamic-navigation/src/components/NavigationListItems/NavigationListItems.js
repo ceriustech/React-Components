@@ -1,18 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // import SubNavigationListItems from "../SubNavigationListItems/SubNavigationListItems";
 
 const NavigationListItems = ({ data }) => {
   console.log("DATA PROP:", data);
   let { subNav } = data;
 
-  console.log(subNav);
+  console.log(data.url);
   return (
-    <div>
+    <Link to={data.url}>
       {data.linkName}
       {/* {subNav.map((item) => (
         <SubNavigationListItems subData={item} />
       ))} */}
-    </div>
+    </Link>
   );
 };
 

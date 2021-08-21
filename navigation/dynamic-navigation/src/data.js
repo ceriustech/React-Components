@@ -1,7 +1,7 @@
 export const navItems = [
   {
     linkName: "Home",
-    url: "https://www.youtube.com/watch?v=ITogH7lJTyE",
+    url: "/",
     subNav: [
       {
         subLinkName: "Sub Link 1",
@@ -23,7 +23,7 @@ export const navItems = [
   },
   {
     linkName: "About",
-    url: "https://www.youtube.com/watch?v=ITogH7lJTyE",
+    url: "/about",
     subNav: [
       {
         subLinkName: "Sub Link 1",
@@ -45,7 +45,7 @@ export const navItems = [
   },
   {
     linkName: "Dashboard",
-    url: "https://www.youtube.com/watch?v=ITogH7lJTyE",
+    url: "/dashboard",
     subNav: [
       {
         subLinkName: "Sub Link 1",
@@ -67,7 +67,7 @@ export const navItems = [
   },
   {
     linkName: "Account",
-    url: "https://www.youtube.com/watch?v=ITogH7lJTyE",
+    url: "/account",
     subNav: [
       {
         subLinkName: "Sub Link 1",
