@@ -1,5 +1,5 @@
 import React from "react";
-import SubNavigationListItems from "../SubNavigationListItems/SubNavigationListItems";
+// import SubNavigationListItems from "../SubNavigationListItems/SubNavigationListItems";
 
 const NavigationListItems = ({ data }) => {
   console.log("DATA PROP:", data);
@@ -9,9 +9,9 @@ const NavigationListItems = ({ data }) => {
   return (
     <div>
       {data.linkName}
-      {subNav.map((item) => (
+      {/* {subNav.map((item) => (
         <SubNavigationListItems subData={item} />
-      ))}
+      ))} */}
     </div>
   );
 };
