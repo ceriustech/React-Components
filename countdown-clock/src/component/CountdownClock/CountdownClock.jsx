@@ -5,7 +5,7 @@ import '../../Styles/CountdownClock/CountdownClock.scss';
 const CountdownClock = () => {
 	const calculateTimeLeft = () => {
 		const launchDate = new Date(
-			'June 15 2021 23:59:59 GMT-0500 (CST)'
+			'September 15 2021 23:59:59 GMT-0500 (CST)'
 		).getTime();
 
 		const now = new Date().getTime();
