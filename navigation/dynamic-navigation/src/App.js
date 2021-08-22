@@ -3,6 +3,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import './Styles/GenericPage.Styles.scss';
 
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
@@ -16,8 +17,8 @@ const App = () => {
       <NavigationContainer />
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route path="/about" component={Dashboard} />
-        <Route path="/dashboard" component={AboutPage} />
+        <Route path="/about" component={AboutPage} />
+        <Route path="/dashboard" component={Dashboard} />
         <Route path="/account" component={AccountPage} />
       </Switch>
     </div>
