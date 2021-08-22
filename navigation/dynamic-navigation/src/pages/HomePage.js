@@ -3,7 +3,7 @@ import React from 'react';
 
 const HomePage = () => {
   return (
-    <div className="container"><h1>Home Page</h1></div>
+    <section className="container"><h1>Home Page</h1></section>
   )
 }
 

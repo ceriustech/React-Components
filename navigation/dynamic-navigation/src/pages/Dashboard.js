@@ -3,7 +3,7 @@ import React from 'react';
 
 const DashboardPage = () => {
   return (
-    <div className="container"><h1>Dashboard Page</h1></div>
+    <section className="container"><h1>Dashboard Page</h1></section>
   )
 }
 

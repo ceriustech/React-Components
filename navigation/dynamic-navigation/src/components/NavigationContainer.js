@@ -6,11 +6,11 @@ import { navItems } from "../data";
 
 
 const NavigationContainer = () => (
-  <div className="nav-container">
+  <nav className="nav-container">
     {navItems.map((item) => (
       <NavigationListItems data={item} />
     ))}
-  </div>
+  </nav>
 );
 
 export default NavigationContainer;
