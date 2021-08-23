@@ -1,89 +1,99 @@
+
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import Dashboard from './pages/Dashboard';
+import AccountPage from './pages/AccountPage';
+
 export const navItems = [
   {
     linkName: "Home",
-    url: "/",
+    component: HomePage,
+    path: "/",
     subNav: [
       {
         subLinkName: "Sub Link 1",
-        url: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
+        path: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
       },
       {
         subLinkName: "Sub Link 2",
-        url: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
+        path: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
       },
       {
         subLinkName: "Sub Link 3",
-        url: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
+        path: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
       },
       {
         subLinkName: "Sub Link 4",
-        url: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
+        path: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
       }
     ]
   },
   {
     linkName: "About",
-    url: "/about",
+    component: AboutPage,
+    path: "/about",
     subNav: [
       {
         subLinkName: "Sub Link 1",
-        url: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
+        path: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
       },
       {
         subLinkName: "Sub Link 2",
-        url: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
+        path: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
       },
       {
         subLinkName: "Sub Link 3",
-        url: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
+        path: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
       },
       {
         subLinkName: "Sub Link 4",
-        url: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
+        path: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
       }
     ]
   },
   {
     linkName: "Dashboard",
-    url: "/dashboard",
+    component: Dashboard,
+    path: "/dashboard",
     subNav: [
       {
         subLinkName: "Sub Link 1",
-        url: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
+        path: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
       },
       {
         subLinkName: "Sub Link 2",
-        url: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
+        path: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
       },
       {
         subLinkName: "Sub Link 3",
-        url: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
+        path: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
       },
       {
         subLinkName: "Sub Link 4",
-        url: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
+        path: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
       }
     ]
   },
   {
     linkName: "Account",
-    url: "/account",
+    component: AccountPage,
+    path: "/account",
     subNav: [
       {
         subLinkName: "Sub Link 1",
-        url: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
+        path: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
       },
       {
         subLinkName: "Sub Link 2",
-        url: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
+        path: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
       },
       {
         subLinkName: "Sub Link 3",
-        url: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
+        path: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
       },
       {
         subLinkName: "Sub Link 4",
-        url: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
+        path: "https://www.youtube.com/watch?v=7UMuJMiNjSk"
       }
     ]
   }

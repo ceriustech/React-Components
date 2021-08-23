@@ -7,9 +7,8 @@ const NavigationListItems = ({ data }) => {
   console.log("DATA PROP:", data);
   let { subNav } = data;
 
-  console.log(data.url);
   return (
-    <Link to={data.url} className="nav-item">
+    <Link to={data.path} className="nav-item">
       {data.linkName}
       {/* {subNav.map((item) => (
         <SubNavigationListItems subData={item} />

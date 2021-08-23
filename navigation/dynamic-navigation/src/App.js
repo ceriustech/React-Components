@@ -3,24 +3,23 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import { navItems } from "./data";
 import './Styles/GenericPage.Styles.scss';
 
-import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
-import Dashboard from './pages/Dashboard';
-import AccountPage from './pages/AccountPage';
+
 import NavigationContainer from "./components/NavigationContainer";
 
 const App = () => {
+  const pageComponentArray = navItems.map(({path, component}, key) => <Route exact path={path} component={component} key={key} />);
+
   return (
     <div className="App">
       <NavigationContainer />
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/about" component={AboutPage} />
-        <Route path="/dashboard" component={Dashboard} />
-        <Route path="/account" component={AccountPage} />
-      </Switch>
+          <Switch>
+           {pageComponentArray}
+          </Switch>
+    
+      
     </div>
   );
 }
