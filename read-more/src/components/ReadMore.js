@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../styles/ReadMore.styles.scss';
 
 const ReadMore = ({ data }) => {
 	[data] = data;

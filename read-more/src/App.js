@@ -1,11 +1,11 @@
-import ReadMore from './components/ReadMore';
-import { readMoreData } from './data';
+import TextContainer from './components/TextContainer';
+
 import './App.css';
 
 const App = () => {
 	return (
 		<div className="App">
-			<ReadMore data={readMoreData} />
+			<TextContainer />
 		</div>
 	);
 };
