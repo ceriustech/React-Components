@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const MobileNavigation = () => {
-  return (
-    <div>MobileNavigation</div>
-  )
-}
+	return <div>MobileNavigation</div>;
+};
 
-export default MobileNavigation
+export default MobileNavigation;
